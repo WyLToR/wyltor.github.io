@@ -8,6 +8,8 @@ import Contact from './Pages/Contact';
 import AboutMe from './Pages/AboutMe';
 import CV from './Pages/CV';
 import "./Style/WelcomePart.css"
+import "./Style/TabletResponsive.css"
+import "./Style/PhoneResponsive.css"
 const router = createBrowserRouter([
   {
     path: "/",

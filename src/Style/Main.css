@@ -1,0 +1,10 @@
+.welcome-text{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.jumpText{
+    text-decoration: none;
+    font-size: 2rem;
+}

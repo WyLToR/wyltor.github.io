@@ -7,10 +7,10 @@ export default function Header() {
         <header>
             <Navbar collapseOnSelect bg="dark" expand="lg" variant="dark">
                 <Container>
-                    <Navbar.Brand><Link className="link-navbar-menu" to={"/"}>WyLToR</Link></Navbar.Brand>
-                    <Navbar.Text><Link className="link-navbar-menu" to={"/aboutme"}>About Me</Link></Navbar.Text>
-                    <Navbar.Text><Link className="link-navbar-menu" to={"/contact"}>Contact</Link></Navbar.Text>
-                    <Navbar.Text><Link className="link-navbar-menu" to={"/cv"}>CV</Link></Navbar.Text>
+                    <Navbar.Brand className="animated-element"><Link className="link-navbar-menu" to={"/"}>WyLToR</Link></Navbar.Brand>
+                    <Navbar.Text className="animated-element"><Link className="link-navbar-menu" to={"/aboutme"}>About Me</Link></Navbar.Text>
+                    <Navbar.Text className="animated-element"><Link className="link-navbar-menu" to={"/contact"}>Contact</Link></Navbar.Text>
+                    <Navbar.Text className="animated-element"><Link className="link-navbar-menu" to={"/cv"}>CV</Link></Navbar.Text>
                 </Container>
             </Navbar>
         </header>

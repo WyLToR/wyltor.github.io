@@ -3,7 +3,7 @@ export default function AboutMe() {
         <>
             <main className="main-page">
                 <div className='welcome-text'>
-                    <h1>About Me</h1>
+                    <h1 className='animated-element'>About Me</h1>
                 </div>
             </main>
         </>

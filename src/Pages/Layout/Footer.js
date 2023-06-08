@@ -19,7 +19,7 @@ export default function Footer() {
             <Container>
                 <Row>
                     <Col><b>Pages:</b></Col>
-                    <Col><b>Contact Profiles:</b></Col>
+                    <Col><b>Profiles:</b></Col>
                     <Col><b>Visitor: {loading ? user?.ip : <Placeholder animation="glow"><Placeholder xs={3} /></Placeholder>}</b></Col>
                 </Row>
                 <Row>

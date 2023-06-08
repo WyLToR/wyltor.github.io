@@ -1,6 +1,6 @@
-@media (max-width: 400px){
+@media (max-width: 450px){
     .main-page h1{
-        font-size: 2.5em;
+        font-size: 2.0em;
     }
     .jumpText{
         font-size: 100%;

@@ -1,9 +1,8 @@
-import { useEffect, useState } from 'react';
-export default function Main() {    
+export default function CV() {
     return (
         <main className="main-page">
             <div className='welcome-text'>
-                <h1>Welcome visitor</h1>
+                <h1>Downloadable documents</h1>
             </div>
         </main>
     )

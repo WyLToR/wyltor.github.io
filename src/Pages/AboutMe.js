@@ -1,7 +1,11 @@
 export default function AboutMe() {
     return (
         <>
-            AboutMe
+            <main className="main-page">
+                <div className='welcome-text'>
+                    <h1>About Me</h1>
+                </div>
+            </main>
         </>
     )
 }

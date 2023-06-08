@@ -3,6 +3,11 @@ import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Main from './Pages/Main';
 import Layout from './Layout';
+import "./Style/Animation.css"
+import Contact from './Pages/Contact';
+import AboutMe from './Pages/AboutMe';
+import CV from './Pages/CV';
+import "./Style/WelcomePart.css"
 const router = createBrowserRouter([
   {
     path: "/",
@@ -14,19 +19,19 @@ const router = createBrowserRouter([
       },
       {
         path: "/aboutme",
-        element: <>About Me</>
+        element: <AboutMe />
       },
       {
         path: "/contact",
-        element: <>Contact</>
+        element: <Contact />
       },
       {
         path: "/cv",
-        element: <>Download CV</>
+        element: <CV />
       }
     ]
   },
-  
+
 ])
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

@@ -1,0 +1,7 @@
+@keyframes welcomeText{
+    0%{opacity:0}
+    100%{opacity:1}
+}
+.welcome-text{
+    animation: welcomeText 2s;
+}

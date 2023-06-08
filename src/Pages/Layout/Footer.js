@@ -3,8 +3,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Link } from 'react-router-dom';
 import "../../Style/Footer.css"
-import { useState, useEffect, useRef } from "react"
-import Image from 'react-bootstrap/Image';
+import { useState, useEffect } from "react"
 import Placeholder from 'react-bootstrap/Placeholder';
 export default function Footer() {
     const [user, setUser] = useState()
@@ -25,19 +24,19 @@ export default function Footer() {
                 </Row>
                 <Row>
                     <Col><Link className="link-footer" to={"/"}>Main</Link></Col>
-                    <Col xs={8}><Link className="link-footer" to={"www.codepen.io/WyLToR"}>CodePen</Link></Col>
+                    <Col xs={8}><a className="link-footer" href="https://www.codepen.io/WyLToR">CodePen</a></Col>
                 </Row>
                 <Row>
                     <Col><Link className="link-footer" to={"/aboutme"}>About Me</Link></Col>
-                    <Col xs={8}><Link className="link-footer" to="www.linkedin.com/in/bekesi-patrik">Linked In</Link></Col>
+                    <Col xs={8}><a className="link-footer" href="https://www.linkedin.com/in/bekesi-patrik">Linked In</a></Col>
                 </Row>
                 <Row>
                     <Col><Link className="link-footer" to={"/contact"}>Contact</Link></Col>
-                    <Col xs={8}><Link className="link-footer" to={"www.github.com/wyltor"}>GitHub</Link></Col>
+                    <Col xs={8}><a className="link-footer" href="https://www.github.com/wyltor">GitHub</a></Col>
                 </Row>
                 <Row>
                     <Col><Link className="link-footer" to={"/cv"}>CV</Link></Col>
-                    <Col xs={8}><Link className="link-footer" to={"mailto:bekesi.patrik@gmail.com"}>Email</Link></Col>
+                    <Col xs={8}><a className="link-footer" href="mailto:bekesi.patrik@gmail.com">Email</a></Col>
                 </Row>
             </Container>
         </footer>

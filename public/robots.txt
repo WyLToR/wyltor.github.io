@@ -1,3 +1,4 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow:
+DEAR GUEST, IF YOU ANYTHING WANT TO TRY, ASK ME FIRST :) KISS, WYLTOR

@@ -1,4 +1,4 @@
-export default function CV() {
+export default function Experience() {
     return (
         <main className="main-page">
             <div className='welcome-text'>

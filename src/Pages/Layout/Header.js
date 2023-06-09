@@ -12,12 +12,13 @@ export default function Header() {
     }, 3000)
     return (
         <header>
-            <Navbar collapseOnSelect bg="dark" expand="lg" variant="dark">
+            <Navbar collapseOnSelect bg="dark" variant="dark">
                 <Container>
                     <Navbar.Brand className="animated-element"><Link className="link-navbar-menu" to={"/"}>WyLToR</Link></Navbar.Brand>
                     <Navbar.Text className="animated-element"><Link className="link-navbar-menu" to={"/aboutme"}>About Me</Link></Navbar.Text>
                     <Navbar.Text className="animated-element"><Link className="link-navbar-menu" to={"/contact"}>Contact</Link></Navbar.Text>
-                    <Navbar.Text className="animated-element"><Link className="link-navbar-menu" to={"/cv"}>CV</Link></Navbar.Text>
+                    <Navbar.Text className="animated-element"><Link className="link-navbar-menu" to={"/experience"}>Experience</Link></Navbar.Text>
+                    <Navbar.Text className="animated-element"><Link className="link-navbar-menu" to={"/articles"}>Articles</Link></Navbar.Text>
                     <ToastContainer />
                 </Container>
             </Navbar>

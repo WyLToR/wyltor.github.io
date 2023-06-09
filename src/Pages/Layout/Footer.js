@@ -5,17 +5,23 @@ import { Link } from 'react-router-dom';
 import "../../Style/Footer.css"
 import { useState, useEffect } from "react"
 import Placeholder from 'react-bootstrap/Placeholder';
+import Button from 'react-bootstrap/Button';
+import arrow_up from "../../img/icon/arrow_up.svg"
 export default function Footer() {
     const [user, setUser] = useState()
     const [loading, setLoading] = useState(false)
-    useEffect(() => {
-        fetch("https://api.ipify.org?format=json")
-            .then(res => res.json())
-            .then(data => setUser(data)
-            ).finally(setLoading(true))
-    }, [user])
+    // useEffect(() => {
+    //     fetch("https://api.ipify.org?format=json")
+    //         .then(res => res.json())
+    //         .then(data => setUser(data)
+    //         ).finally(setLoading(true))
+    // }, [user])
     return (
         <footer>
+            <Container>
+                
+                <h3>Do you like my page? Buy me a <Button href="https://www.buymeacoffee.com/WyLToR" variant="outline-primary">Coffee</Button></h3><Button href="#top" size="sm" variant="outline-primary">Back to the TOP<img width="20px" src={arrow_up} /></Button>
+            </Container>
             <Container>
                 <Row>
                     <Col><b>Pages:</b></Col>

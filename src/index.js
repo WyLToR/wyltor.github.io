@@ -6,10 +6,10 @@ import Layout from './Layout';
 import "./Style/Animation.css"
 import Contact from './Pages/Contact';
 import AboutMe from './Pages/AboutMe';
-import CV from './Pages/CV';
 import "./Style/WelcomePart.css"
 import "./Style/TabletResponsive.css"
 import "./Style/PhoneResponsive.css"
+import Experience from './Pages/Experience';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -28,8 +28,12 @@ const router = createBrowserRouter([
         element: <Contact />
       },
       {
-        path: "/cv",
-        element: <CV />
+        path: "/experience",
+        element: <Experience />
+      },
+      {
+        path:"/articles",
+        element:<h1>COMING SOON</h1>
       }
     ]
   },

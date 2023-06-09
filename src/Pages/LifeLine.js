@@ -92,7 +92,7 @@ export default function LifeLine({ visible, setVisible, contRef, cb }) {
                                 and I aspire to be recognized as a <b>valuable team member</b> and a <b>skilled developer</b>.</h3>
                             <Button onClick={() => setTimeout(() => {
                                 setVisible(false)
-                            }, 1500)} href='#top' size="sm" variant="outline-primary">Expand less <img src={arrow_up} width="15px" /></Button>
+                            }, 1500)} href='#aboutme' size="sm" variant="outline-primary">Expand less <img src={arrow_up} width="15px" /></Button>
                         </div>
                     </>
                     :

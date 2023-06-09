@@ -15,6 +15,7 @@ export default function Main() {
                     <Link to={"/aboutme"} className='animated-element jumpText'>About me</Link>
                 </div>
             </main>
+            
         </>
     )
 }

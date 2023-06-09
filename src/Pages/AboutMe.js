@@ -14,7 +14,7 @@ export default function AboutMe() {
     const contRef = useRef(null)
     return (
         <>
-            <main className="main-page" style={dark ? { backgroundColor: 'black' } : { backgroundColor: 'white' }}>
+            <main className="main-page" style={dark ? { backgroundColor: 'black' } : { backgroundColor: 'white' }} id="aboutme">
                 <div className='welcome-text'>
                     <h1 className='animated-element' style={dark ? { color: 'white' } : { color: 'black' }}>About Me</h1>
                     <Button

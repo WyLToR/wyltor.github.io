@@ -8,6 +8,7 @@ import Main from "./Pages/Main";
 import AboutMe from "./Pages/AboutMe";
 import Contact from "./Pages/Contact";
 import Experience from "./Pages/Experience";
+import Articles from "./Pages/Articles";
 
 export default function Layout() {
     return (
@@ -18,6 +19,7 @@ export default function Layout() {
                 <AboutMe />
                 <Contact />
                 <Experience />
+                <Articles />
                 <Footer />
             </DarkContextProvider>
         </PageContextProvider>

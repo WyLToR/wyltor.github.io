@@ -30,9 +30,11 @@ export default function Header() {
                     <Navbar.Text className="animated-element">{dark ? <Button onClick={() => {
                         setDark(false);
                         localStorage.setItem("dark", false)
+                        document.body.style.backgroundColor="white"
                     }}><img src={light_mode} /></Button> : <Button onClick={() => {
                         setDark(true)
                         localStorage.setItem("dark", true)
+                        document.body.style.backgroundColor="black"
                     }}><img src={dark_mode} /></Button>}</Navbar.Text>
                     <ToastContainer />
                 </Container>

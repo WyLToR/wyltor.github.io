@@ -35,15 +35,15 @@ export default function Footer() {
                     <Col xs={8}><a className="link-footer" href="https://www.codepen.io/WyLToR">CodePen</a></Col>
                 </Row>
                 <Row>
-                    <Col><Link className="link-footer" to={"/aboutme"}>About Me</Link></Col>
+                    <Col><a className="link-footer" href="#aboutme">About Me</a></Col>
                     <Col xs={8}><a className="link-footer" href="https://www.linkedin.com/in/bekesi-patrik">Linked In</a></Col>
                 </Row>
                 <Row>
-                    <Col><Link className="link-footer" to={"/contact"}>Contact</Link></Col>
+                    <Col><a className="link-footer" href="#contact">Contact</a></Col>
                     <Col xs={8}><a className="link-footer" href="https://www.github.com/wyltor">GitHub</a></Col>
                 </Row>
                 <Row>
-                    <Col><Link className="link-footer" to={"/cv"}>CV</Link></Col>
+                    <Col><a className="link-footer" href="#experience">Experience</a></Col>
                     <Col xs={8}><a className="link-footer" href="mailto:bekesi.patrik@gmail.com">Email</a></Col>
                 </Row>
             </Container>

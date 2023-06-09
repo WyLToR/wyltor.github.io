@@ -1,3 +1,5 @@
+import LifeLine from "./LifeLine"
+import "../Style/Aboutme.css"
 export default function AboutMe() {
     return (
         <>
@@ -6,6 +8,7 @@ export default function AboutMe() {
                     <h1 className='animated-element'>About Me</h1>
                 </div>
             </main>
+            <LifeLine />
         </>
     )
 }

@@ -1,0 +1,16 @@
+.lifeline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.lifeline-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6,1fr);
+    justify-items: center;
+}
+.lifeline-grid >div{
+    
+}

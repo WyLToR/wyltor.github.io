@@ -5,4 +5,8 @@
     .jumpText{
         font-size: 100%;
     }
+    #h3-highschool, .img-highschool {
+        position: absolute;
+        font-size: 1rem;
+    }
 }

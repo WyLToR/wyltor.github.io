@@ -3,11 +3,13 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Link } from 'react-router-dom';
 import "../../Style/Footer.css"
-import { useState, useEffect } from "react"
+import { useState, useEffect, useContext } from "react"
 import Placeholder from 'react-bootstrap/Placeholder';
 import Button from 'react-bootstrap/Button';
 import arrow_up from "../../img/icon/arrow_up.svg"
+import { darkContext } from '../../Contexts/darkContext';
 export default function Footer() {
+    const { dark } = useContext(darkContext)
     const [user, setUser] = useState()
     const [loading, setLoading] = useState(false)
     // useEffect(() => {
@@ -17,12 +19,12 @@ export default function Footer() {
     //         ).finally(setLoading(true))
     // }, [user])
     return (
-        <footer>
+        <footer style={dark ? { backgroundColor: 'black' } : { backgroundColor: 'white' }}>
             <Container>
-                
-                <h3>Do you like my page? Buy me a <Button href="https://www.buymeacoffee.com/WyLToR" variant="outline-primary">Coffee</Button></h3><Button href="#top" size="sm" variant="outline-primary">Back to the TOP<img width="20px" src={arrow_up} /></Button>
+
+                <h3 style={dark ? { color: 'white' } : { color: 'black' }}>Do you like my page? Buy me a <Button href="https://www.buymeacoffee.com/WyLToR" variant="outline-primary">Coffee</Button></h3><Button href="#top" size="sm" variant="outline-primary">Back to the TOP<img width="20px" src={arrow_up} /></Button>
             </Container>
-            <Container>
+            <Container style={dark ? { color: 'white' } : { color: 'black' }}>
                 <Row>
                     <Col><b>Pages:</b></Col>
                     <Col><b>Profiles:</b></Col>

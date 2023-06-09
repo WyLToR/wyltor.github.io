@@ -1,9 +1,11 @@
 import LifeLine from "./LifeLine"
 import "../Style/Aboutme.css"
-import { useRef, useState } from "react"
+import { useContext, useRef, useState } from "react"
 import Button from "react-bootstrap/Button"
 import arrow_down from "../img/icon/arrow_down.svg"
+import { darkContext } from "../Contexts/darkContext"
 export default function AboutMe() {
+    const { dark } = useContext(darkContext)
     const [visible, setVisible] = useState(false)
     const cb = (entries) => {
         const [entry] = entries;
@@ -12,11 +14,11 @@ export default function AboutMe() {
     const contRef = useRef(null)
     return (
         <>
-            <main className="main-page">
+            <main className="main-page" style={dark ? { backgroundColor: 'black' } : { backgroundColor: 'white' }}>
                 <div className='welcome-text'>
-                    <h1 className='animated-element'>About Me</h1>
+                    <h1 className='animated-element' style={dark ? { color: 'white' } : { color: 'black' }}>About Me</h1>
                     <Button
-                        variant="outline-primary"
+                        variant="primary"
                         onClick={() => setVisible(true)}
                         href="#lifeline">
                         <img src={arrow_down} />

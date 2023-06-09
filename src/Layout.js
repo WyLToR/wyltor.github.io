@@ -3,13 +3,16 @@ import { PageContextProvider } from "./Contexts/pageContext"
 import Header from "./Pages/Layout/Header"
 import Footer from "./Pages/Layout/Footer"
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { DarkContextProvider } from "./Contexts/darkContext";
 
-export default function Layout(){
+export default function Layout() {
     return (
         <PageContextProvider>
-            <Header />
-            <Outlet />
-            <Footer />
+            <DarkContextProvider>
+                <Header />
+                <Outlet />
+                <Footer />
+            </DarkContextProvider>
         </PageContextProvider>
     )
 }

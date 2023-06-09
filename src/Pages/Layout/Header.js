@@ -21,25 +21,24 @@ export default function Header() {
     const [url, setURL] = useSearchParams()
     const navigate = useNavigate();
     useEffect(() => {
-        navigate("/")
-    }, [url])
+        dark ? document.body.style.backgroundColor = "black" : document.body.style.backgroundColor = "white"
+    }, [dark])
     return (
         <header>
             <Navbar collapseOnSelect bg="dark" variant="dark">
                 <Container>
-                    <Navbar.Brand className="animated-element"><Button  onClick={()=>navigate("/")}>WyLToR</Button></Navbar.Brand>
-                    <Navbar.Text className="animated-element"><Button variant="outline-primary" color="black" href="#aboutme">About Me</Button></Navbar.Text>
-                    <Navbar.Text className="animated-element"><Button variant="outline-primary" href="#contact">Contact</Button></Navbar.Text>
-                    <Navbar.Text className="animated-element"><Button variant="outline-primary" href="#experience">Experience</Button></Navbar.Text>
-                    <Navbar.Text className="animated-element"><Button variant="outline-primary" href="#articles">Articles</Button></Navbar.Text>
-                    <Navbar.Text className="animated-element">{dark ? <Button variant="light" onClick={() => {
+                    <Navbar.Brand className="animated-element"><Button size="sm" onClick={() => navigate("/")}>WyLToR</Button></Navbar.Brand>
+                    <Navbar.Text className="animated-element"><Button size="sm" variant="outline-primary" color="black" href="#aboutme">AboutMe</Button></Navbar.Text>
+                    <Navbar.Text className="animated-element"><Button size="sm" variant="outline-primary" href="#contact">Contact</Button></Navbar.Text>
+                    <Navbar.Text className="animated-element"><Button size="sm" variant="outline-primary" href="#experience">Experience</Button></Navbar.Text>
+                    <Navbar.Text className="animated-element"><Button size="sm" variant="outline-primary" href="#articles">Articles</Button></Navbar.Text>
+                    <Navbar.Text className="animated-element">{dark ? <Button size="sm" variant="light" onClick={() => {
+                        console.log()
                         setDark(false);
                         localStorage.setItem("dark", false)
-                        document.body.style.backgroundColor = "white"
-                    }}><img src={light_mode} /></Button> : <Button variant="light" onClick={() => {
+                    }}><img src={light_mode} /></Button> : <Button size="sm" variant="light" onClick={() => {
                         setDark(true)
                         localStorage.setItem("dark", true)
-                        document.body.style.backgroundColor = "black"
                     }}><img src={dark_mode} /></Button>}</Navbar.Text>
                     <ToastContainer />
                 </Container>

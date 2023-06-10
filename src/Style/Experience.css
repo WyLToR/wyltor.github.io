@@ -1,0 +1,14 @@
+.experience-grid{
+    width: 50rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.experience-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.experience-img{
+    height: 100px;
+}

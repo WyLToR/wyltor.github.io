@@ -22,6 +22,7 @@ export default function Header() {
     const navigate = useNavigate();
     useEffect(() => {
         dark ? document.body.style.backgroundColor = "black" : document.body.style.backgroundColor = "white"
+        document.body.style.transition="ease-in-out 3s all"
     }, [dark])
     return (
         <header>

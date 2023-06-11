@@ -25,8 +25,8 @@ export default function Experience() {
                     <div className="experience-grid">
                         {img.map((img, index) => (
                             <>
-                                <div className="experience-item" style={dark ? { backgroundColor: 'dark' } : { backgroundColor: 'white' }} key={index}>
-                                    <img src={img} alt="" className="experience-img" />
+                                <div className="experience-item"  key={index}>
+                                    <img src={img} alt="" key={index} className="experience-img" style={dark ? { backgroundColor: 'dark' } : { backgroundColor: 'white' }} />
                                 </div>
                             </>
                         ))}

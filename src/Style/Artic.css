@@ -1,0 +1,8 @@
+.artic-container {
+    width: 25rem;
+    min-height: 10rem;
+    max-height: 20rem;
+    border-radius: 10px;
+    transition: ease-in-out 3s;
+    /* overflow-y: scroll; */
+}

@@ -8,4 +8,10 @@
     .life-img{
         width: 100%;
     }
+    .experience-grid{
+        width: 10rem;
+    }
+    .experience-img{
+        height: 75px;
+    }
 }

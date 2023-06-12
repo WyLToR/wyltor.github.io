@@ -31,7 +31,7 @@ export default function Footer() {
                     <Col><b>Visitor: {loading ? user?.ip : <Placeholder animation="glow"><Placeholder xs={3} /></Placeholder>}</b></Col>
                 </Row>
                 <Row>
-                    <Col><Link className="link-footer" to={"/"}>Main</Link></Col>
+                    <Col><a className="link-footer" href="#top">Main</a></Col>
                     <Col xs={8}><a className="link-footer" href="https://www.codepen.io/WyLToR">CodePen</a></Col>
                 </Row>
                 <Row>

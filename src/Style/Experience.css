@@ -1,5 +1,5 @@
 .experience-grid{
-    width: 50rem;
+    width: 45rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -10,5 +10,5 @@
     align-items: baseline;
 }
 .experience-img{
-    height: 100px;
+    height: 90px;
 }

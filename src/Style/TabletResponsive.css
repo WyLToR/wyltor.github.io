@@ -32,4 +32,10 @@
         justify-content: center;
         align-items: center;
     }
+    .experience-grid{
+        width: 25rem;
+    }
+    .experience-img{
+        height: 70px;
+    }
 }

@@ -5,6 +5,7 @@ import arrow_up from "../img/icon/arrow_up.svg"
 import "../Style/LifeLine.css"
 import { useContext, useEffect, useRef } from 'react';
 import { darkContext } from '../Contexts/darkContext';
+import Experience from "./Experience"
 export default function LifeLine({ visible, setVisible, contRef, cb }) {
     const { dark } = useContext(darkContext)
     const opt = {
@@ -41,11 +42,6 @@ export default function LifeLine({ visible, setVisible, contRef, cb }) {
                                 <h3 style={dark ? { color: 'white' } : { color: 'black' }}>YOUNG</h3>
                             </div>
                         </div>
-                    </>
-                    :
-                    ""}
-                {visible ?
-                    <>
                         <div className='empty left' style={{ animation: "enter-animation 1s" }}>
                             <div className='block'>
                                 <h3 style={dark ? { color: 'white' } : { color: 'black' }}>ENDURANCE</h3>
@@ -63,12 +59,6 @@ export default function LifeLine({ visible, setVisible, contRef, cb }) {
                                 <h3 style={dark ? { color: 'white' } : { color: 'black' }}>ISSUE</h3>
                             </div>
                         </div>
-                    </>
-                    :
-                    ""
-                }
-                {visible ?
-                    <>
                         <div className='empty left' style={{ animation: "enter-animation 1s" }}>
                             <div className='block'>
                                 <h3 style={dark ? { color: 'white' } : { color: 'black' }}>STRUGGLE</h3>
@@ -82,7 +72,7 @@ export default function LifeLine({ visible, setVisible, contRef, cb }) {
                         </div>
                         <div className='empty right' style={{ animation: "enter-animation 1s" }}>
                             <div className='block'>
-                                <h3>GOAL</h3>
+                                <h3 style={dark ? { color: 'white' } : { color: 'black' }}>GOAL</h3>
                             </div>
                         </div>
                         <div className='descLast' style={{ animation: "enter-animation 1s" }}>
@@ -90,9 +80,122 @@ export default function LifeLine({ visible, setVisible, contRef, cb }) {
                                 I feel truly resolute in my purpose.
                                 I believe that my creations will make a lasting impact on the world,
                                 and I aspire to be recognized as a <b>valuable team member</b> and a <b>skilled developer</b>.</h3>
+                        </div>
+                        <div className='descLast'>
+                            <h1 style={dark ? { color: 'white' } : { color: 'black' }}>Experiences</h1>
+                        </div>
+                        <div className='empty left'>
+                            <div className='block'>
+                                <h3 style={dark ? { color: 'white' } : { color: 'black' }}>First Work</h3>
+                            </div>
+                        </div>
+                        <div className='desc'>
+                            <h2 style={dark ? { color: 'white' } : { color: 'black' }}>Hovány Corporate</h2>
+                            <h3 style={dark ? { color: 'white' } : { color: 'black' }}>2017.07-2021.07</h3>
+                            <ul style={dark ? { color: 'white' } : { color: 'black' }}>
+                                <li>New vehicle sales</li>
+                                <li>Used vehicle sales</li>
+                                <li>Regional representation</li>
+                                <li>Documentation management</li>
+                                <li>Used vehicle inspection</li>
+                            </ul>
+                        </div>
+                        <div style={dark ? { color: 'white' } : { color: 'black' }}>
+                            <div className='descColOne'>
+                                <h2 style={dark ? { color: 'white' } : { color: 'black' }}>Optimum Gold Car Corporate</h2>
+                                <h3 style={dark ? { color: 'white' } : { color: 'black' }}>2021.08-2022.08</h3>
+                                <ul style={dark ? { color: 'white' } : { color: 'black' }}>
+                                    <li>Used vehicle sales</li>
+                                    <li>Site maintenance</li>
+                                    <li>Documentation management</li>
+                                    <li>Vehicle repair</li>
+                                    <li>Vehicle naturalization</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div style={dark ? { color: 'white' } : { color: 'black' }}>
+                            <div className='block'>
+                                <h3 style={dark ? { color: 'white' } : { color: 'black' }}>Second Work</h3>
+                            </div>
+                        </div>
+                        <div className='empty left'>
+                            <div className='block'>
+                                <h3 style={dark ? { color: 'white' } : { color: 'black' }}>Third Work</h3>
+                            </div>
+                        </div>
+                        <div style={dark ? { color: 'white' } : { color: 'black' }}>
+                            <div className='desc'>
+                                <h2 style={dark ? { color: 'white' } : { color: 'black' }}>Hovány Dél-Alföld Corporate</h2>
+                                <h3 style={dark ? { color: 'white' } : { color: 'black' }}>2022.09-2023.03</h3>
+                                <ul style={dark ? { color: 'white' } : { color: 'black' }}>
+                                    <li>New vehicle sales</li>
+                                    <li>Used vehicle sales</li>
+                                    <li>Regional representation</li>
+                                    <li>Documentation management</li>
+                                    <li>Used vehicle inspection</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div style={dark ? { color: 'white' } : { color: 'black' }}>
+                            <div className='descColOne'>
+                                <h2 style={dark ? { color: 'white' } : { color: 'black' }}>Juvenal Corporate</h2>
+                                <h3 style={dark ? { color: 'white' } : { color: 'black' }}>2023.04-Present</h3>
+                                <ul style={dark ? { color: 'white' } : { color: 'black' }}>
+                                    <li>New vehicle sales</li>
+                                    <li>Regional representation</li>
+                                    <li>Documentation management</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className='empty right'>
+                            <div className='block'>
+                                <h3 style={dark ? { color: 'white' } : { color: 'black' }}>Fourth Work</h3>
+                            </div>
+                        </div>
+                        <div className='descLast'>
+                            <h1 style={dark ? { color: 'white' } : { color: 'black' }}>Studies</h1>
+                        </div>
+                        <div className='empty left'>
+                            <div className='block'>
+                                <h3 style={dark ? { color: 'white' } : { color: 'black' }}>School</h3>
+                            </div>
+                        </div>
+                        <div style={dark ? { color: 'white' } : { color: 'black' }}>
+                            <div className='desc'>
+                                <h2 style={dark ? { color: 'white' } : { color: 'black' }}>IFF Hungary</h2>
+                                <h3 style={dark ? { color: 'white' } : { color: 'black' }}>2012-2013</h3>
+                                <h3 style={dark ? { color: 'white' } : { color: 'black' }}>Multimedia&Character Designer</h3>
+                                <ul style={dark ? { color: 'white' } : { color: 'black' }}>
+                                    <li>Adobe <b>Photoshop</b></li>
+                                    <li>Adobe <b>Premiere Pro</b></li>
+                                    <li>Adobe <b>Flash</b></li>
+                                    <li>Adobe <b>Bridge</b></li>
+                                    <li>Adobe <b>Lightroom</b></li>
+                                    <li>Adobe <b>XD</b></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div style={dark ? { color: 'white' } : { color: 'black' }}>
+                            <div className='descColOne'>
+                                <h2 style={dark ? { color: 'white' } : { color: 'black' }}>Progmatic Academy</h2>
+                                <h3 style={dark ? { color: 'white' } : { color: 'black' }}>2022-2023</h3>
+                                <h3 style={dark ? { color: 'white' } : { color: 'black' }}>Fullstack Developer</h3>
+                                <ul style={dark ? { color: 'white' } : { color: 'black' }}>
+                                    <li><b>Frontend</b> (HTML5, CSS, JS/TS (ES6), AJAX, REST API, REACT, GIT, SCRUM)</li>
+                                    <li><b>Backend</b> (NodeJS, expressJS, SQL)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className='empty right'>
+                            <div className='block'>
+                                <h3 style={dark ? { color: 'white' } : { color: 'black' }}>School</h3>
+                            </div>
+                        </div>
+                        <div className='descLast'>
+                            <Experience />
                             <Button onClick={() => setTimeout(() => {
                                 setVisible(false)
-                            }, 1500)} href='#aboutme' size="sm" variant="outline-primary">Expand less <img src={arrow_up} width="15px" /></Button>
+                            }, 1000)} href='#aboutme' size="sm" variant="outline-primary">Expand less <img src={arrow_up} width="15px" /></Button>
                         </div>
                     </>
                     :

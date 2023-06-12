@@ -18,8 +18,7 @@ export default function Layout() {
                 <Main />
                 <AboutMe />
                 <Contact />
-                <Experience />
-                <Articles />
+                {/* <Articles /> */}
                 <Footer />
             </DarkContextProvider>
         </PageContextProvider>

@@ -55,3 +55,7 @@
     justify-content: center;
     align-items: center;
 }
+.block:hover{
+    transition: ease-in-out 150ms;
+    box-shadow: 0 0 5px 5px black;
+}

@@ -12,12 +12,18 @@ export default function Footer() {
     const { dark } = useContext(darkContext)
     const [user, setUser] = useState()
     const [loading, setLoading] = useState(false)
-    // useEffect(() => {
-    //     fetch("https://api.ipify.org?format=json")
-    //         .then(res => res.json())
-    //         .then(data => setUser(data)
-    //         ).finally(setLoading(true))
-    // }, [user])
+    useEffect(() => {
+        fetch("https://api.ipify.org?format=json")
+            .then(res => {
+                if(res.ok){
+                    return res.json()
+                }else{
+                    setUser("no allocate")
+                }
+            })
+            .then(data => setUser(data)
+            ).finally(setLoading(true))
+    }, [user])
     return (
         <footer style={dark ? { backgroundColor: 'black' } : { backgroundColor: 'white' }}>
             <Container>

@@ -1,0 +1,17 @@
+.contact-icons{
+    display: flex;
+    gap: 2em;
+}
+.contact-page{
+    flex-flow: column;
+    gap: 2em;
+}
+.img-side>a>img{
+    width: 100px;
+    border-radius: 20px;
+    transition: ease-in-out 250ms;
+}
+.img-side>a>img:hover{
+    transition: ease-in-out 250ms;
+    box-shadow: 0 0 5px 5px black;
+}

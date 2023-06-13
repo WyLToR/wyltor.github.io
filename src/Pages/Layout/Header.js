@@ -22,28 +22,23 @@ export default function Header() {
     const navigate = useNavigate();
     useEffect(() => {
         dark ? document.body.style.backgroundColor = "black" : document.body.style.backgroundColor = "white"
-        document.body.style.transition="ease-in-out 3s all"
     }, [dark])
     return (
-        <header>
-            <Navbar collapseOnSelect bg="dark" variant="dark">
-                <Container>
-                    <Navbar.Brand className="animated-element"><Button size="sm" onClick={() => navigate("/")}>WyLToR</Button></Navbar.Brand>
-                    <Navbar.Text className="animated-element"><Button size="sm" variant="outline-primary" color="black" href="#aboutme">AboutMe</Button></Navbar.Text>
-                    <Navbar.Text className="animated-element"><Button size="sm" variant="outline-primary" href="#contact">Contact</Button></Navbar.Text>
-                    <Navbar.Text className="animated-element"><Button size="sm" variant="outline-primary" href="#experience">Experience</Button></Navbar.Text>
-                    <Navbar.Text className="animated-element"><Button size="sm" variant="outline-primary" href="#articles">Articles</Button></Navbar.Text>
-                    <Navbar.Text className="animated-element">{dark ? <Button size="sm" variant="light" onClick={() => {
+        <header className="header">
+            <nav className="navbar-header">
+                    <div className="animated-element"><Button size="sm" onClick={() => navigate("/")}>WyLToR</Button></div>
+                    <div className="animated-element"><Button size="sm" variant="outline-primary" color="black" href="#aboutme">AboutMe</Button></div>
+                    <div className="animated-element"><Button size="sm" variant="outline-primary" href="#contact">Contact</Button></div>
+                    <div className="animated-element">{dark ? <Button size="sm" variant="light" onClick={() => {
                         console.log()
                         setDark(false);
                         localStorage.setItem("dark", false)
                     }}><img src={light_mode} /></Button> : <Button size="sm" variant="light" onClick={() => {
                         setDark(true)
                         localStorage.setItem("dark", true)
-                    }}><img src={dark_mode} /></Button>}</Navbar.Text>
-                    <ToastContainer />
-                </Container>
-            </Navbar>
+                    }}><img src={dark_mode} /></Button>}</div>
+                    {/* <ToastContainer /> */}
+            </nav>
         </header>
     )
 }

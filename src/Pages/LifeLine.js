@@ -6,6 +6,7 @@ import "../Style/LifeLine.css"
 import { useContext, useEffect, useRef } from 'react';
 import { darkContext } from '../Contexts/darkContext';
 import Experience from "./Experience"
+import prof from "../img/prof.jpg"
 export default function LifeLine({ visible, setVisible, contRef, cb }) {
     const { dark } = useContext(darkContext)
     const opt = {
@@ -26,7 +27,7 @@ export default function LifeLine({ visible, setVisible, contRef, cb }) {
                 {visible ?
                     <>
                         <div className='img' style={{ animation: "enter-animation 1s" }}>
-                            <img className='picture' src='https://firebasestorage.googleapis.com/v0/b/portfolio-63560.appspot.com/o/ProfilePicture%2Fprof.jpg?alt=media&token=9c55489c-2579-4fe8-b393-e1d92616cde3&_gl=1*xz0qzd*_ga*MTA0NzEwNzMzOS4xNjgzNjQxOTQw*_ga_CW55HF8NVT*MTY4NjI5MTMyMS4xMC4xLjE2ODYyOTEzMzguMC4wLjA.' />
+                            <img className='picture' src={prof} />
                         </div>
                         <div className='desc' style={{ animation: "enter-animation 1s" }}>
                             <h1 style={dark ? { color: 'white' } : { color: 'black' }}>My name is Patrik Békési</h1>
@@ -92,28 +93,22 @@ export default function LifeLine({ visible, setVisible, contRef, cb }) {
                         <div className='desc'>
                             <h2 style={dark ? { color: 'white' } : { color: 'black' }}>Hovány Corporate</h2>
                             <h3 style={dark ? { color: 'white' } : { color: 'black' }}>2017.07-2021.07</h3>
-                            <ul style={dark ? { color: 'white' } : { color: 'black' }}>
-                                <li>New vehicle sales</li>
-                                <li>Used vehicle sales</li>
-                                <li>Regional representation</li>
-                                <li>Documentation management</li>
-                                <li>Used vehicle inspection</li>
-                            </ul>
+                            <h3 style={dark ? { color: 'white' } : { color: 'black' }}>New vehicle sales</h3>
+                            <h3 style={dark ? { color: 'white' } : { color: 'black' }}>Used vehicle sales</h3>
+                            <h3 style={dark ? { color: 'white' } : { color: 'black' }}>Regional representation</h3>
+                            <h3 style={dark ? { color: 'white' } : { color: 'black' }}>Documentation management</h3>
+                            <h3 style={dark ? { color: 'white' } : { color: 'black' }}>Used vehicle inspection</h3>
                         </div>
-                        <div style={dark ? { color: 'white' } : { color: 'black' }}>
-                            <div className='descColOne'>
-                                <h2 style={dark ? { color: 'white' } : { color: 'black' }}>Optimum Gold Car Corporate</h2>
-                                <h3 style={dark ? { color: 'white' } : { color: 'black' }}>2021.08-2022.08</h3>
-                                <ul style={dark ? { color: 'white' } : { color: 'black' }}>
-                                    <li>Used vehicle sales</li>
-                                    <li>Site maintenance</li>
-                                    <li>Documentation management</li>
-                                    <li>Vehicle repair</li>
-                                    <li>Vehicle naturalization</li>
-                                </ul>
-                            </div>
+                        <div style={dark ? { color: 'white' } : { color: 'black' }} className='descColOne'>
+                            <h2 style={dark ? { color: 'white' } : { color: 'black' }}>Optimum Gold Car Corporate</h2>
+                            <h3 style={dark ? { color: 'white' } : { color: 'black' }}>2021.08-2022.08</h3>
+                            <h3 style={dark ? { color: 'white' } : { color: 'black' }}>Used vehicle sales</h3>
+                            <h3 style={dark ? { color: 'white' } : { color: 'black' }}>Site maintenance</h3>
+                            <h3 style={dark ? { color: 'white' } : { color: 'black' }}>Documentation management</h3>
+                            <h3 style={dark ? { color: 'white' } : { color: 'black' }}>Vehicle repair</h3>
+                            <h3 style={dark ? { color: 'white' } : { color: 'black' }}>Vehicle naturalization</h3>
                         </div>
-                        <div style={dark ? { color: 'white' } : { color: 'black' }}>
+                        <div className='empty right'>
                             <div className='block'>
                                 <h3 style={dark ? { color: 'white' } : { color: 'black' }}>Second Work</h3>
                             </div>
@@ -123,29 +118,21 @@ export default function LifeLine({ visible, setVisible, contRef, cb }) {
                                 <h3 style={dark ? { color: 'white' } : { color: 'black' }}>Third Work</h3>
                             </div>
                         </div>
-                        <div style={dark ? { color: 'white' } : { color: 'black' }}>
-                            <div className='desc'>
-                                <h2 style={dark ? { color: 'white' } : { color: 'black' }}>Hovány Dél-Alföld Corporate</h2>
-                                <h3 style={dark ? { color: 'white' } : { color: 'black' }}>2022.09-2023.03</h3>
-                                <ul style={dark ? { color: 'white' } : { color: 'black' }}>
-                                    <li>New vehicle sales</li>
-                                    <li>Used vehicle sales</li>
-                                    <li>Regional representation</li>
-                                    <li>Documentation management</li>
-                                    <li>Used vehicle inspection</li>
-                                </ul>
-                            </div>
+                        <div className='desc'>
+                            <h2 style={dark ? { color: 'white' } : { color: 'black' }}>Hovány Dél-Alföld Corporate</h2>
+                            <h3 style={dark ? { color: 'white' } : { color: 'black' }}>2022.09-2023.03</h3>
+                            <h3 style={dark ? { color: 'white' } : { color: 'black' }}>New vehicle sales</h3>
+                            <h3 style={dark ? { color: 'white' } : { color: 'black' }}>Used vehicle sales</h3>
+                            <h3 style={dark ? { color: 'white' } : { color: 'black' }}>Regional representation</h3>
+                            <h3 style={dark ? { color: 'white' } : { color: 'black' }}>Documentation management</h3>
+                            <h3 style={dark ? { color: 'white' } : { color: 'black' }}>Used vehicle inspection</h3>
                         </div>
-                        <div style={dark ? { color: 'white' } : { color: 'black' }}>
-                            <div className='descColOne'>
-                                <h2 style={dark ? { color: 'white' } : { color: 'black' }}>Juvenal Corporate</h2>
-                                <h3 style={dark ? { color: 'white' } : { color: 'black' }}>2023.04-Present</h3>
-                                <ul style={dark ? { color: 'white' } : { color: 'black' }}>
-                                    <li>New vehicle sales</li>
-                                    <li>Regional representation</li>
-                                    <li>Documentation management</li>
-                                </ul>
-                            </div>
+                        <div className='descColOne'>
+                            <h2 style={dark ? { color: 'white' } : { color: 'black' }}>Juvenal Corporate</h2>
+                            <h3 style={dark ? { color: 'white' } : { color: 'black' }}>2023.04-Present</h3>
+                            <h3 style={dark ? { color: 'white' } : { color: 'black' }}>New vehicle sales</h3>
+                            <h3 style={dark ? { color: 'white' } : { color: 'black' }}>Regional representation</h3>
+                            <h3 style={dark ? { color: 'white' } : { color: 'black' }}>Documentation management</h3>
                         </div>
                         <div className='empty right'>
                             <div className='block'>
@@ -160,31 +147,23 @@ export default function LifeLine({ visible, setVisible, contRef, cb }) {
                                 <h3 style={dark ? { color: 'white' } : { color: 'black' }}>School</h3>
                             </div>
                         </div>
-                        <div style={dark ? { color: 'white' } : { color: 'black' }}>
-                            <div className='desc'>
-                                <h2 style={dark ? { color: 'white' } : { color: 'black' }}>IFF Hungary</h2>
-                                <h3 style={dark ? { color: 'white' } : { color: 'black' }}>2012-2013</h3>
-                                <h3 style={dark ? { color: 'white' } : { color: 'black' }}>Multimedia&Character Designer</h3>
-                                <ul style={dark ? { color: 'white' } : { color: 'black' }}>
-                                    <li>Adobe <b>Photoshop</b></li>
-                                    <li>Adobe <b>Premiere Pro</b></li>
-                                    <li>Adobe <b>Flash</b></li>
-                                    <li>Adobe <b>Bridge</b></li>
-                                    <li>Adobe <b>Lightroom</b></li>
-                                    <li>Adobe <b>XD</b></li>
-                                </ul>
-                            </div>
+                        <div className='desc'>
+                            <h2 style={dark ? { color: 'white' } : { color: 'black' }}>IFF Hungary</h2>
+                            <h3 style={dark ? { color: 'white' } : { color: 'black' }}>2012-2013</h3>
+                            <h3 style={dark ? { color: 'white' } : { color: 'black' }}>Multimedia&Character Designer</h3>
+                            <h3 style={dark ? { color: 'white' } : { color: 'black' }}>Adobe <b>Photoshop</b></h3>
+                            <h3 style={dark ? { color: 'white' } : { color: 'black' }}>Adobe <b>Premiere Pro</b></h3>
+                            <h3 style={dark ? { color: 'white' } : { color: 'black' }}>Adobe <b>Flash</b></h3>
+                            <h3 style={dark ? { color: 'white' } : { color: 'black' }}>Adobe <b>Bridge</b></h3>
+                            <h3 style={dark ? { color: 'white' } : { color: 'black' }}>Adobe <b>Lightroom</b></h3>
+                            <h3 style={dark ? { color: 'white' } : { color: 'black' }}>Adobe <b>XD</b></h3>
                         </div>
-                        <div style={dark ? { color: 'white' } : { color: 'black' }}>
-                            <div className='descColOne'>
-                                <h2 style={dark ? { color: 'white' } : { color: 'black' }}>Progmatic Academy</h2>
-                                <h3 style={dark ? { color: 'white' } : { color: 'black' }}>2022-2023</h3>
-                                <h3 style={dark ? { color: 'white' } : { color: 'black' }}>Fullstack Developer</h3>
-                                <ul style={dark ? { color: 'white' } : { color: 'black' }}>
-                                    <li><b>Frontend</b> (HTML5, CSS, JS/TS (ES6), AJAX, REST API, REACT, GIT, SCRUM)</li>
-                                    <li><b>Backend</b> (NodeJS, expressJS, SQL)</li>
-                                </ul>
-                            </div>
+                        <div className='descColOne'>
+                            <h2 style={dark ? { color: 'white' } : { color: 'black' }}>Progmatic Academy</h2>
+                            <h3 style={dark ? { color: 'white' } : { color: 'black' }}>2022-2023</h3>
+                            <h3 style={dark ? { color: 'white' } : { color: 'black' }}>Fullstack Developer</h3>
+                            <h3 style={dark ? { color: 'white' } : { color: 'black' }}><b>Frontend</b> (HTML5, CSS, JS/TS (ES6), AJAX, REST API, REACT, GIT, SCRUM)</h3>
+                            <h3 style={dark ? { color: 'white' } : { color: 'black' }}><b>Backend</b> (NodeJS, expressJS, SQL)</h3>
                         </div>
                         <div className='empty right'>
                             <div className='block'>

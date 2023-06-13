@@ -1,3 +1,8 @@
+.navbar-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 .link-navbar-menu{
     text-decoration: none;
 }

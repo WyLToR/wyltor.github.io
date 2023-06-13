@@ -10,6 +10,9 @@ export default function Contact() {
                     <h1 className='animated-element' style={dark ? { color: 'white' } : { color: 'black' }}>Contact</h1>
                 </div>
             </main>
+            <div>
+                
+            </div>
         </>
     )
 }

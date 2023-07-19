@@ -4,11 +4,14 @@
     justify-content: center;
     flex-wrap: wrap;
 }
-.experience-item{
+.experience-item {
+    width: 100px;
+    height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-}
+  }
 .experience-img{
-    height: 90px;
+    width: 100%;
+    object-fit: contain;
 }

@@ -23,7 +23,7 @@ export default function Footer() {
             })
             .then(data => setUser(data)
             ).finally(setLoading(true))
-    }, [user])
+    }, [loading])
     return (
         <footer style={dark ? { backgroundColor: 'black' } : { backgroundColor: 'white' }}>
             <Container>

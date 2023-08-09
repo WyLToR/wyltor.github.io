@@ -25,8 +25,9 @@ export default function Header() {
     }, [dark])
     return (
         <header className="header">
-            <nav className="navbar-header">
+            <nav className="navbar-header d-flex justify-content-around align-items-center mt-5">
                     <div className="animated-element"><Button size="sm" onClick={() => navigate("/")}>WyLToR</Button></div>
+                    <div className="animated-element"><Button size="sm" variant="outline-primary" href="#projects">Projects</Button></div>
                     <div className="animated-element"><Button size="sm" variant="outline-primary" color="black" href="#aboutme">AboutMe</Button></div>
                     <div className="animated-element"><Button size="sm" variant="outline-primary" href="#contact">Contact</Button></div>
                     <div className="animated-element">{dark ? <Button size="sm" variant="light" onClick={() => {
@@ -37,7 +38,6 @@ export default function Header() {
                         setDark(true)
                         localStorage.setItem("dark", true)
                     }}><img src={dark_mode} /></Button>}</div>
-                    {/* <ToastContainer /> */}
             </nav>
         </header>
     )

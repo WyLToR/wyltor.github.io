@@ -1,9 +1,8 @@
 import Container from 'react-bootstrap/Container';
-import Image from 'react-bootstrap/Image';
 import Button from "react-bootstrap/Button"
 import arrow_up from "../img/icon/arrow_up.svg"
 import "../Style/LifeLine.css"
-import { useContext, useEffect, useRef } from 'react';
+import { useContext, useEffect} from 'react';
 import { darkContext } from '../Contexts/darkContext';
 import Experience from "./Experience"
 import prof from "../img/prof.jpg"

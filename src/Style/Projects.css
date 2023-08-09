@@ -1,13 +1,17 @@
 .projects-grid{
-    margin: 2em;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 1em;
+    display: flex;
+    justify-content: space-between;
 }
 .project-description{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 1em;
+}
+.project-description>img{
+    height: 200px;
+    width: 400px;
 }
 .project-link{
     text-decoration: none;

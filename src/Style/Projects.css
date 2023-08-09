@@ -1,0 +1,17 @@
+.projects-grid{
+    margin: 2em;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1em;
+}
+.project-description{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+.project-link{
+    text-decoration: none;
+}
+.project-tip{
+    color: red;
+}

@@ -40,4 +40,8 @@
     .experience-img{
         height: 70px;
     }
+    .projects-grid{
+        display: flex;
+        flex-flow: column;
+    }
 }

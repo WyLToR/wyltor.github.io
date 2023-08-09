@@ -17,7 +17,7 @@ export default function Projects() {
                 <Container className="projects-grid">
                     <Link to="https://team-02-project-fe323.web.app/" className="project-link" style={dark ? { color: 'white' } : { color: 'black' }}>
                         <div className="project-description">
-                            <Image src={firstWebshop} alt="first-webshop" className="w-50" />
+                            <Image src={firstWebshop} alt="first-webshop" />
                             <div>
                                 <h3>E-Commerce site</h3>
                                 <ul>
@@ -32,7 +32,7 @@ export default function Projects() {
                     </Link>
                     <Link to="https://fullstack-webshop.firebaseapp.com/" className="project-link" style={dark ? { color: 'white' } : { color: 'black' }}>
                         <div className="project-description">
-                            <Image src={secondWebshop} alt="second-webshop" className="w-50" />
+                            <Image src={secondWebshop} alt="second-webshop" />
                             <div>
                                 <h3>E-Commerce site</h3>
                                 <ul>

@@ -8,6 +8,7 @@ import AboutMe from "./Pages/AboutMe";
 import Contact from "./Pages/Contact";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Projects from "./Pages/Projects";
+import { ToastContainer } from "react-toastify";
 
 export default function Layout() {
     return (
@@ -19,6 +20,7 @@ export default function Layout() {
                 <AboutMe />
                 <Contact />
                 <Footer />
+                <ToastContainer position="bottom-right" closeOnClick/>
             </DarkContextProvider>
         </PageContextProvider>
     )
